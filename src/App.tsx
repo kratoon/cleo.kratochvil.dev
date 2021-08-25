@@ -5,8 +5,11 @@ import usFlag from './us.png';
 import './App.css';
 import label, { setLabelsLang, Lang } from "./labels";
 
+const defaultLang: Lang = navigator.language && navigator.language.includes('cs') ? 'cs' : 'en';
+setLabelsLang(defaultLang);
+
 function App() {
-  const [lang, setLang] = useState<Lang>('en');
+  const [lang, setLang] = useState<Lang>(defaultLang);
   const newLang: Lang = lang === 'en' ? 'cs' : 'en';
   const flagImg = ({
     'en': usFlag,
