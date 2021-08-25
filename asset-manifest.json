@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.8ebf1438.chunk.js",
-    "main.js.map": "/static/js/main.8ebf1438.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e2f9b2c2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e2f9b2c2.js.map",
-    "static/js/2.bbd57879.chunk.js": "/static/js/2.bbd57879.chunk.js",
-    "static/js/2.bbd57879.chunk.js.map": "/static/js/2.bbd57879.chunk.js.map",
-    "static/js/3.8c4dc01e.chunk.js": "/static/js/3.8c4dc01e.chunk.js",
-    "static/js/3.8c4dc01e.chunk.js.map": "/static/js/3.8c4dc01e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.bbd57879.chunk.js.LICENSE.txt": "/static/js/2.bbd57879.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/cleo.kratochvil.dev/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/cleo.kratochvil.dev/static/js/main.8ebf1438.chunk.js",
+    "main.js.map": "/cleo.kratochvil.dev/static/js/main.8ebf1438.chunk.js.map",
+    "runtime-main.js": "/cleo.kratochvil.dev/static/js/runtime-main.d52869c5.js",
+    "runtime-main.js.map": "/cleo.kratochvil.dev/static/js/runtime-main.d52869c5.js.map",
+    "static/js/2.bbd57879.chunk.js": "/cleo.kratochvil.dev/static/js/2.bbd57879.chunk.js",
+    "static/js/2.bbd57879.chunk.js.map": "/cleo.kratochvil.dev/static/js/2.bbd57879.chunk.js.map",
+    "static/js/3.8c4dc01e.chunk.js": "/cleo.kratochvil.dev/static/js/3.8c4dc01e.chunk.js",
+    "static/js/3.8c4dc01e.chunk.js.map": "/cleo.kratochvil.dev/static/js/3.8c4dc01e.chunk.js.map",
+    "index.html": "/cleo.kratochvil.dev/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/cleo.kratochvil.dev/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.bbd57879.chunk.js.LICENSE.txt": "/cleo.kratochvil.dev/static/js/2.bbd57879.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cleo.kratochvil.dev/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e2f9b2c2.js",
+    "static/js/runtime-main.d52869c5.js",
     "static/js/2.bbd57879.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.8ebf1438.chunk.js"
