@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import cleo from './cleo.jpg';
+import cleo from './cleo.png';
 import czFlag from './cz.png';
 import usFlag from './us.png';
 import './App.css';
