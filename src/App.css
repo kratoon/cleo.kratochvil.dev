@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.lang {
+  margin-top: 10px;
+  width: 100%; 
+  max-width: 20rem;
+}
+
+.lang img {
+  float: right;
+  cursor: pointer;
+}
+
+.cleo {
+  margin-top: 10px;
+}
+
+.cleo img {
+  max-width: 20rem;
+}
+
+.phone {
+  margin-bottom: 30px;
+}
+
+.phone a {
+  color: #9c9c9c;
+}

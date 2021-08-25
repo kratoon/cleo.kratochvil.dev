@@ -1,41 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cleo from './cleo.jpg';
 import './App.css';
-
-function getBirthdate(): string {
-  const birthdate = new Date(2021, 5, 14);
-  const year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(birthdate);
-  const month = new Intl.DateTimeFormat('en', { month: 'short' }).format(birthdate);
-  const date = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(birthdate);
-  return `${month} ${date}, ${year}`;
-}
+import label, { setLabelsLang, Lang } from "./labels";
 
 function App() {
+  const [lang, setLang] = useState<Lang>('en');
+  const newLang: Lang = lang === 'en' ? 'cs' : 'en';
+  const flagCode = ({
+    'en': 'us',
+    'cs': 'cz'
+  })[newLang];
+  const flagUrl = `https://www.countryflags.io/${flagCode}/flat/32.png`;
+
+  function changeLang() {
+    setLang(newLang);
+    setLabelsLang(newLang);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{marginTop: '2rem'}}>
-          <img src={cleo} className="cleo" title="Cleo" alt="cleo" style={{ maxWidth: '20rem' }}/>
+        <div className={"lang"}>
+          <img src={flagUrl} onClick={changeLang} alt={newLang} title={newLang}/>
         </div>
-        <p>
+        <div className={"cleo"}>
+          <img src={cleo} title="Cleo" alt="cleo"/>
+        </div>
+        <div>
           <h1>
-            Hey there, my name is Cleo!
+            {label.heyThere}
           </h1>
           <div>
-            I'm a german shepherd living in Prague.
+            {label.imGermanShepherd}
           </div>
           <div>
-            I was born on {getBirthdate()}.
+            {label.born}
           </div>
-        </p>
-        <p>
           <h4>
-            In case I'm lost, call my owner, he's ugly crying.
+            {label.lost}
           </h4>
-          <div>
-            <a href="tel:+420 776 036 747" style={{color: '#9c9c9c'}}>+420 776 036 747</a>
+          <div className={"phone"}>
+            <a href="tel:+420 776 036 747">+420 776 036 747</a>
           </div>
-        </p>
+        </div>
       </header>
     </div>
   );
