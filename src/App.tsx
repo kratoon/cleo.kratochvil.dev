@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import cleo from './cleo.jpg';
+import czFlag from './cz.png';
+import usFlag from './us.png';
 import './App.css';
 import label, { setLabelsLang, Lang } from "./labels";
 
 function App() {
   const [lang, setLang] = useState<Lang>('en');
   const newLang: Lang = lang === 'en' ? 'cs' : 'en';
-  const flagCode = ({
-    'en': 'us',
-    'cs': 'cz'
+  const flagImg = ({
+    'en': usFlag,
+    'cs': czFlag
   })[newLang];
-  const flagUrl = `https://www.countryflags.io/${flagCode}/flat/32.png`;
-
   function changeLang() {
     setLang(newLang);
     setLabelsLang(newLang);
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className={"lang"}>
-          <img src={flagUrl} onClick={changeLang} alt={newLang} title={newLang}/>
+          <img src={flagImg} onClick={changeLang} alt={newLang} title={newLang}/>
         </div>
         <div className={"cleo"}>
           <img src={cleo} title="Cleo" alt="cleo"/>
