@@ -7,7 +7,7 @@ function getBirthdate(): string {
   const year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(birthdate);
   const month = new Intl.DateTimeFormat('en', { month: 'short' }).format(birthdate);
   const date = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(birthdate);
-  return `${month} ${date} ${year}`;
+  return `${month} ${date}, ${year}`;
 }
 
 function App() {
@@ -19,10 +19,10 @@ function App() {
         </div>
         <p>
           <h1>
-            Hey there! My name is Cleo!
+            Hey there, my name is Cleo!
           </h1>
           <div>
-            I'm german shepherd living in Prague.
+            I'm a german shepherd living in Prague.
           </div>
           <div>
             I was born on {getBirthdate()}.
@@ -30,7 +30,7 @@ function App() {
         </p>
         <p>
           <h4>
-            In case I'm lost call my owner, he's ugly crying.
+            In case I'm lost, call my owner, he's ugly crying.
           </h4>
           <div>
             <a href="tel:+420 776 036 747" style={{color: '#9c9c9c'}}>+420 776 036 747</a>
