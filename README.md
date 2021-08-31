@@ -1,2 +1,2 @@
-# A website dedicated to my dog, Cleo.
+# Website dedicated to my dog, Cleo.
 https://cleo.kratochvil.dev
