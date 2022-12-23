@@ -17,7 +17,7 @@ const labels: {
     'cs': 'Narodil jsem se 14. června 2021.'
   },
   lost: {
-    'en': "In case I'm lost, call my owner. He's ugly crying.",
+    'en': "In case I'm lost, contact my owner. He's ugly crying.",
     'cs': "Pokud jsem se ztratil, prosím, kontaktujte mého páníčka. Je strachy bez sebe."
   }
 }
